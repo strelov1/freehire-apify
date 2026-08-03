@@ -33,4 +33,4 @@
 
 - [x] 6.1 Smoke-run against production with `maxItems: 20` and confirm the dataset contents
 - [x] 6.2 Write the README: what it does, three worked input examples, output field table, the stated ceiling, and the API link
-- [ ] 6.3 Prepare the Store listing: title, description, categories (`Jobs`, `Business`), icon
+- [x] 6.3 Prepare the Store listing: title, description, categories (`Jobs`, `Business`), icon
