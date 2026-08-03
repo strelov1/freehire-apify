@@ -1,0 +1,13 @@
+{
+  "actorSpecification": 1,
+  "name": "freehire-jobs",
+  "title": "freehire Jobs Scraper",
+  "description": "Pull IT job postings from the freehire catalogue by country, skill, seniority and more.",
+  "version": "0.1",
+  "buildTag": "latest",
+  "dockerfile": "../Dockerfile",
+  "input": "./input_schema.json",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  }
+}

@@ -1,0 +1,10 @@
+.git
+.github
+node_modules
+dist
+storage
+apify_storage
+docs
+openspec
+*.test.ts
+.env

@@ -1,0 +1,69 @@
+{
+  "title": "freehire Jobs Scraper",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "query": {
+      "title": "Search query",
+      "type": "string",
+      "description": "Free-text search across job titles and descriptions. Leave empty to browse the freshest postings.",
+      "editor": "textfield",
+      "prefill": "senior backend"
+    },
+    "countries": {
+      "title": "Countries",
+      "type": "array",
+      "description": "ISO 3166-1 alpha-2 codes, lowercase (de, pl, us).",
+      "editor": "stringList",
+      "prefill": ["de"]
+    },
+    "skills": {
+      "title": "Skills",
+      "type": "array",
+      "description": "Canonical skill tags (go, kubernetes, react).",
+      "editor": "stringList"
+    },
+    "seniority": {
+      "title": "Seniority",
+      "type": "array",
+      "description": "junior, middle, senior, lead, principal.",
+      "editor": "stringList"
+    },
+    "category": {
+      "title": "Category",
+      "type": "array",
+      "description": "backend, frontend, devops, data, mobile, qa and similar.",
+      "editor": "stringList"
+    },
+    "workMode": {
+      "title": "Work mode",
+      "type": "array",
+      "description": "remote, hybrid or onsite.",
+      "editor": "stringList"
+    },
+    "postedWithinDays": {
+      "title": "Posted within days",
+      "type": "integer",
+      "description": "Only jobs posted in the last N days.",
+      "editor": "number",
+      "minimum": 1
+    },
+    "salaryMin": {
+      "title": "Minimum salary",
+      "type": "integer",
+      "description": "Annual salary floor. Only jobs whose stated salary meets it are returned.",
+      "editor": "number",
+      "minimum": 0
+    },
+    "maxItems": {
+      "title": "Maximum jobs",
+      "type": "integer",
+      "description": "How many jobs to collect. Capped at 1000 per run — use the freehire API for the full catalogue.",
+      "editor": "number",
+      "minimum": 1,
+      "maximum": 1000,
+      "default": 1000
+    }
+  },
+  "required": []
+}

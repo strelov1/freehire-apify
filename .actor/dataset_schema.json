@@ -1,0 +1,35 @@
+{
+  "actorSpecification": 1,
+  "views": {
+    "overview": {
+      "title": "Jobs",
+      "transformation": {
+        "fields": [
+          "title",
+          "company",
+          "countries",
+          "cities",
+          "skills",
+          "posted_at",
+          "source",
+          "freehire_url",
+          "url"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "title": { "label": "Title" },
+          "company": { "label": "Company" },
+          "countries": { "label": "Countries" },
+          "cities": { "label": "Cities" },
+          "skills": { "label": "Skills" },
+          "posted_at": { "label": "Posted" },
+          "source": { "label": "Source" },
+          "freehire_url": { "label": "freehire" },
+          "url": { "label": "Apply" }
+        }
+      }
+    }
+  }
+}
