@@ -32,7 +32,7 @@ describe('toDatasetItem', () => {
         expect(item.title).toBe('Backend Engineer');
         expect(item.source).toBe('greenhouse');
         expect(item.freehire_url).toBe(
-            'https://freehire.me/jobs/acme-backend-engineer-ab12',
+            'https://freehire.me/jobs/acme-backend-engineer-ab12?utm_source=apify&utm_medium=actor',
         );
     });
 });
