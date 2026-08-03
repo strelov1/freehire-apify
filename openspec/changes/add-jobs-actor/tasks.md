@@ -21,16 +21,16 @@
 - [x] 4.1 Fetch pages sequentially with a 250 ms pause between them, stopping at the ceiling or when results run out
 - [x] 4.2 Retry a failed page once with backoff; on a second failure, stop and keep what was collected
 - [x] 4.3 Map each job to a dataset item, preserving upstream field names and adding `freehire_url`
-- [ ] 4.4 Push items to the Apify Dataset
+- [x] 4.4 Push items to the Apify Dataset
 
 ## 5. Run reporting
 
-- [ ] 5.1 On reaching the ceiling, log collected-of-matching and point at the freehire API
-- [ ] 5.2 On an empty result, log that nothing matched and echo the parameters that were sent
-- [ ] 5.3 On an upstream failure, record the early stop in the run summary and still finish successfully
+- [x] 5.1 On reaching the ceiling, log collected-of-matching and point at the freehire API
+- [x] 5.2 On an empty result, log that nothing matched and echo the parameters that were sent
+- [x] 5.3 On an upstream failure, record the early stop in the run summary and still finish successfully
 
 ## 6. Verification and publication
 
-- [ ] 6.1 Smoke-run against production with `maxItems: 20` and confirm the dataset contents
-- [ ] 6.2 Write the README: what it does, three worked input examples, output field table, the stated ceiling, and the API link
+- [x] 6.1 Smoke-run against production with `maxItems: 20` and confirm the dataset contents
+- [x] 6.2 Write the README: what it does, three worked input examples, output field table, the stated ceiling, and the API link
 - [ ] 6.3 Prepare the Store listing: title, description, categories (`Jobs`, `Business`), icon
