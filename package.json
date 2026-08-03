@@ -1,0 +1,24 @@
+{
+  "name": "freehire-apify",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Apify actor that pulls IT job postings from the freehire catalogue",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "apify": "^3.2.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
