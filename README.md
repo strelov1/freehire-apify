@@ -19,7 +19,7 @@ One dataset item per job, in freehire's own field names:
 | `company` | Company name |
 | `company_slug` | Stable company identifier |
 | `url` | The original posting on the company's board |
-| `freehire_url` | The posting on freehire |
+| `freehire_url` | The posting on freehire (tagged `utm_source=apify`) |
 | `countries` | ISO 3166-1 alpha-2 codes, lowercase |
 | `cities` | Recognised cities |
 | `regions` | Region tags, including `remote` variants |

@@ -6,6 +6,13 @@ const RETRY_DELAY_MS = 1000;
 
 export const FREEHIRE_JOB_URL = 'https://freehire.me/jobs';
 
+/**
+ * Attribution on the back-link. Without it, visits arriving from a dataset are
+ * indistinguishable from direct traffic, and the actor's whole purpose — bringing people to
+ * freehire — cannot be measured.
+ */
+export const BACKLINK_UTM = 'utm_source=apify&utm_medium=actor';
+
 export type Job = Record<string, unknown>;
 
 export type PageFetcher = (page: { limit: number; offset: number }) => Promise<{
@@ -27,7 +34,8 @@ export interface CollectResult {
  * Everything else keeps its original name, so the dataset schema cannot drift from the API.
  */
 export function toDatasetItem(job: Job): Job {
-    return { ...job, freehire_url: `${FREEHIRE_JOB_URL}/${String(job.public_slug)}` };
+    const slug = String(job.public_slug);
+    return { ...job, freehire_url: `${FREEHIRE_JOB_URL}/${slug}?${BACKLINK_UTM}` };
 }
 
 /**
