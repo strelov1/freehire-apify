@@ -12,9 +12,9 @@
 
 ## 3. Query construction
 
-- [ ] 3.1 Build the query string for `/api/v1/jobs/search` from validated input, forwarding repeated values as repeated parameters
-- [ ] 3.2 Default an empty input to freshest-first ordering (`sort=posted_at&order=desc`)
-- [ ] 3.3 Clamp `maxItems` to the hard ceiling of 1000 and derive the page plan (100 per page, at most 10 pages)
+- [x] 3.1 Build the query string for `/api/v1/jobs/search` from validated input, forwarding repeated values as repeated parameters
+- [x] 3.2 Default an empty input to freshest-first ordering (`sort=posted_at&order=desc`)
+- [x] 3.3 Clamp `maxItems` to the hard ceiling of 1000 and derive the page plan (100 per page, at most 10 pages)
 
 ## 4. Fetch loop
 
