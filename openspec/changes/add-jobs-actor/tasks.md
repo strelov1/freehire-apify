@@ -18,9 +18,9 @@
 
 ## 4. Fetch loop
 
-- [ ] 4.1 Fetch pages sequentially with a 250 ms pause between them, stopping at the ceiling or when results run out
-- [ ] 4.2 Retry a failed page once with backoff; on a second failure, stop and keep what was collected
-- [ ] 4.3 Map each job to a dataset item, preserving upstream field names and adding `freehire_url`
+- [x] 4.1 Fetch pages sequentially with a 250 ms pause between them, stopping at the ceiling or when results run out
+- [x] 4.2 Retry a failed page once with backoff; on a second failure, stop and keep what was collected
+- [x] 4.3 Map each job to a dataset item, preserving upstream field names and adding `freehire_url`
 - [ ] 4.4 Push items to the Apify Dataset
 
 ## 5. Run reporting
