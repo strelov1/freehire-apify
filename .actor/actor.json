@@ -5,6 +5,7 @@
   "description": "Pull IT job postings from the freehire catalogue by country, skill, seniority and more.",
   "version": "0.1",
   "buildTag": "latest",
+  "categories": ["JOBS", "BUSINESS"],
   "dockerfile": "../Dockerfile",
   "input": "./input_schema.json",
   "storages": {
